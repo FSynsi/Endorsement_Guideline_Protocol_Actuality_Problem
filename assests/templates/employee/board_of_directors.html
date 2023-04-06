@@ -1,0 +1,222 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>authorization-policy</title>
+    {% load static %}
+<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all">
+<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Oil&Gas Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{% static 'css/flexslider.css'%}" type="text/css" media="screen" />
+<script src="{% static 'js/jquery.min.js'%}"></script>
+</head>
+<style>
+.dropbtn {
+  background-color: #ff7200;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left:30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+  <style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<body>
+<!-- header -->
+	<div class="header">
+  	    <div class="container">
+			<div class="header-top">
+
+				<h1 style="text-align:center;font-weight:bold;">Endorsement Guideline Protocol Actuality Problem</h1>
+					<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+			<div class="header-bottom">
+				<div class="container">
+
+					<div class="head-nav">
+						<span class="menu"> </span>
+							<ul>
+								<li class="active"><a href="{% url 'employee_index' %}">Home</a></li>
+                                <div class="dropdown">
+                                <button class="dropbtn">LOGIN</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'employee_login' %}">Employee</a>
+                                     <a href="{% url 'managing_director' %}">Managing Director</a>
+                                     <a href="{% url 'projectadmin_login' %}">Admin</a>
+                                 </div>
+                                </div>
+                                <div class="dropdown">
+                                <button class="dropbtn">ABOUT US</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'growth_story'%}">Growth Story</a>
+                                     <a href="{% url 'history'%}">History</a>
+                                     <a href="{% url 'board_of_directors'%}">Board Of Directors</a>
+                                     <a href="{% url 'material_management'%}">Materials Management</a>
+                                 </div>
+                                </div>
+                                <div class="dropdown">
+                                <button class="dropbtn">SUSTAINABILITY</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'health_safety'%}">Health and Safety</a>
+                                     <a href="{% url 'environment'%}">Environment</a>
+                                     <a href="{% url 'carbon_management'%}">Carbon Management</a>
+                                     <a href="{% url 'energy_center'%}">Energy Center</a>
+                                 </div>
+                                </div>
+								<div class="dropdown">
+                                <button class="dropbtn">INVESTORS</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'notices'%}">Notices</a>
+                                     <a href="{% url 'policies'%}">Policies</a>
+
+                                 </div>
+                                </div>
+								<div class="dropdown">
+                                <button class="dropbtn">MEDIA</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'press_release'%}">Press Release</a>
+
+                                 </div>
+                                </div>
+
+
+								<div class="clearfix"> </div>
+						    </ul>
+					</div>
+						<div class="clearfix"> </div>
+						<!-- script-for-nav -->
+					<script>
+						$( "span.menu" ).click(function() {
+						  $( ".head-nav ul" ).slideToggle(300, function() {
+							// Animation complete.
+						  });
+						});
+					</script>
+				<!-- script-for-nav -->
+				</div>
+			</div>
+	<div class="banner-1">
+		<div class="container">
+		</div>
+	</div>
+<div class="main">
+		<div class="container">
+			<h2>Board Of Directors</h2>
+
+
+
+					</div>
+
+					<div class="clearfix" > </div>
+						 <h4 style="margin-left:100px;text-decoration:underline;font-weight:bold;">CMD and Functional Directors</h4>
+                 <table id="customers" style="margin-left:100px;margin-top:40px;width:1000px;">
+
+                     <tbody>
+        <tr>
+
+            <td><img src="{% static 'images/Shashi_Shanker_CMD.jpg' %}" alt=""/></td>
+            <td>Shashi Shanker(Chairman & Managing Director)</td>
+
+
+        </tr>
+                     <tr>
+
+            <td><img src="{% static 'images/Subhash_Kumar_Director_Finance.jpg' %}" alt=""/></td>
+            <td>Subhash Kumar(Director (Finance))</td>
+
+
+        </tr>
+                      <tr>
+
+            <td><img src="{% static 'images/Rajesh_Kakkar_Director_offshore.jpg' %}" alt=""/></td>
+            <td>Rajesh Kakkar(Director (Offshore))</td>
+
+
+        </tr>
+                       <tr>
+
+            <td><img src="{% static 'images/DHR_AlkaMittal.jpg' %}" alt=""/></td>
+            <td>Dr. Alka Mittal(Director (HR))</td>
+
+
+        </tr>
+                     <tr>
+
+            <td><img src="{% static 'images/rk_srivastava_director_exploration.jpg' %}" alt=""/></td>
+            <td>Rajesh Kumar Srivastava(Director (Exploration))</td>
+
+
+        </tr>
+
+       </tbody>
+                 </table>
+
+				<div class="clearfix"> </div>
+
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<p>Endorsement Guideline Protocol Actuality Problem</p>
+		</div>
+	</div>
+<!-- footer-bottom -->
+</body>
+</html>

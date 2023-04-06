@@ -1,0 +1,218 @@
+    <!--
+    Au<!--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+    -->
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    <title>authorization-policy</title>
+        {% load static %}
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Oil&Gas Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/flexslider.css'%}" type="text/css" media="screen" />
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    </head>
+    <style>
+    .dropbtn {
+      background-color: #ff7200;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left:30px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+    <body>
+    <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="header-top">
+
+                    <h1 style="text-align:center;font-weight:bold;">Endorsement Guideline Protocol Actuality Problem</h1>
+                        <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+                <div class="header-bottom">
+                    <div class="container">
+
+                        <div class="head-nav">
+                            <span class="menu"> </span>
+                               <ul>
+								<li class="active"><a href="{% url 'employee_index' %}">Home</a></li>
+                                <div class="dropdown">
+                                <button class="dropbtn">LOGIN</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'employee_login' %}">Employee</a>
+                                     <a href="{% url 'managing_director' %}">Managing Director</a>
+                                     <a href="{% url 'projectadmin_login' %}">Admin</a>
+                                 </div>
+                                </div>
+                                <div class="dropdown">
+                                <button class="dropbtn">ABOUT US</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'growth_story'%}">Growth Story</a>
+                                     <a href="{% url 'history'%}">History</a>
+                                     <a href="{% url 'board_of_directors'%}">Board Of Directors</a>
+                                     <a href="{% url 'material_management'%}">Materials Management</a>
+                                 </div>
+                                </div>
+                                <div class="dropdown">
+                                <button class="dropbtn">SUSTAINABILITY</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'health_safety'%}">Health and Safety</a>
+                                     <a href="{% url 'environment'%}">Environment</a>
+                                     <a href="{% url 'carbon_management'%}">Carbon Management</a>
+                                     <a href="{% url 'energy_center'%}">Energy Center</a>
+                                 </div>
+                                </div>
+								<div class="dropdown">
+                                <button class="dropbtn">INVESTORS</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'notices'%}">Notices</a>
+                                     <a href="{% url 'policies'%}">Policies</a>
+
+                                 </div>
+                                </div>
+								<div class="dropdown">
+                                <button class="dropbtn">MEDIA</button>
+                                 <div class="dropdown-content">
+                                     <a href="{% url 'press_release'%}">Press Release</a>
+
+                                 </div>
+                                </div>
+
+
+								<div class="clearfix"> </div>
+						    </ul>
+                        </div>
+                            <div class="clearfix"> </div>
+                            <!-- script-for-nav -->
+                        <script>
+                            $( "span.menu" ).click(function() {
+                              $( ".head-nav ul" ).slideToggle(300, function() {
+                                // Animation complete.
+                              });
+                            });
+                        </script>
+                    <!-- script-for-nav -->
+                    </div>
+                </div>
+        <div class="banner-1">
+            <div class="container">
+            </div>
+        </div>
+    <div class="main-1">
+		<div class="container">
+			<div class="register">
+		  	  <form method="post" autocomplete="off">
+                  {% csrf_token %}
+				 <div class="register-top-grid">
+					<h3>EMPLOYEE REGISTER</h3>
+					 <div class="wow fadeInLeft" data-wow-delay="0.4s">
+						<span style="font-weight:bold;color:black;">First Name<label>*</label></span>
+						<input type="text" name="first_name" required="true">
+					 </div>
+					 <div class="wow fadeInRight" data-wow-delay="0.4s">
+						<span style="font-weight:bold;color:black;">Last Name<label>*</label></span>
+						<input type="text" name="last_name" required>
+					 </div>
+					 <div class="wow fadeInRight" data-wow-delay="0.4s">
+						 <span style="font-weight:bold;color:black;">Email Address<label>*</label></span>
+						 <input type="email" name="email" required>
+					 </div>
+					 <div class="wow fadeInRight" data-wow-delay="0.4s">
+						 <span style="font-weight:bold;color:black;">Designation<label>*</label></span>
+						 <select name="designation" style="width: 96%;border: 1px solid black;outline-color:#FF5B36;font-size: 1em;
+	                        padding: 0.5em;">
+							 <option value="select_designation">----------Select Designation----------</option>
+							 <option value="senior_engineer">Senior Engineer</option>
+							 <option value="junior_engineer">Junior Engineer</option>
+							 <option value="contractors">Contractors</option>
+							 <option value="agencies">Agencies</option>
+							 <option value="subcontractors">Subcontractors</option>
+							 <option value="tunnel_operator">Tunnel operator</option>
+							 <option value="apprentices">Apprentices</option>
+							 <option value="general_manager">General Manager</option>
+							 <option value="chief_general_manager">Chief General Manager</option>
+							 <option value="production_general_manager">Production general manager</option>
+							 <option value="construction_general_manager">Construction general manager</option>
+							 <option value="deputy_general_manager">Deputy General Manager</option>
+							 <option value="financial_deputy_general_manager">Financial Deputy General Manager</option>
+							 <option value="general_manager_human_resource">General manager-Human resources</option>
+							 <option value="deputy_general_manager_dgm_production">Deputy General Manager (DGM) production</option>
+						 </select>
+					 </div>
+                      <div class="wow fadeInRight" data-wow-delay="0.4s">
+						 <span style="font-weight:bold;color:black;">Gender<label>*</label></span>
+						 <input type="radio" name="gender" value="male">Male
+                          <input type="radio" name="gender" value="female">Female
+					 </div>
+					 <div class="wow fadeInRight" data-wow-delay="0.4s">
+						 <span style="font-weight:bold;color:black;">Username<label>*</label></span>
+						 <input type="text" name="uname">
+					 </div>
+					  <div class="wow fadeInLeft" data-wow-delay="0.4s">
+                          <span style="font-weight:bold;color:black;">Password<label>*</label></span>
+                          <input type="password" name="password">
+                      </div>
+
+					 <div class="clearfix"> </div>
+
+					 </div>
+ <div style="width:500px;">
+ <input type="submit" value="Submit" style="background-color:#ff7200;color:white;font-size:20px;font-weight:bold;margin-top:30px;">
+
+                  </div>
+
+				</form>
+				<div class="clearfix"> </div>
+
+		   </div>
+		 </div>
+	</div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Endorsement Guideline Protocol Actuality Problem</p>
+            </div>
+        </div>
+    <!-- footer-bottom -->
+    </body>
+    </html>

@@ -1,0 +1,172 @@
+
+    <html>
+    <head>
+    <title>authorization-policy</title>
+        {% load static %}
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Oil&Gas Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/flexslider.css'%}" type="text/css" media="screen" />
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    </head>
+    <style>
+    .dropbtn {
+      background-color: #ff7200;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left:30px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+    <style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color:white;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff7200;
+  color: white;
+}
+</style>
+    <body>
+    <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="header-top">
+
+                    <h1 style="text-align:center;font-weight:bold;">Endorsement Guideline Protocol Actuality Problem</h1>
+                        <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+                <div class="header-bottom">
+                    <div class="container">
+
+                        <div class="head-nav">
+                            <span class="menu"> </span>
+                                <ul >
+                                    <li ><a href="{% url 'admin_home' %}" style="background-color:#ff7200;color:white;">Project Details</a></li>
+                                    <li class="active"><a href="{% url 'employee_details' %}" style="background-color:#ff7200;color:white;">Employee Details</a></li>
+                                    <li class="active"><a href="{% url 'transportation_details' %}" style="background-color:#ff7200;color:white;">Transportation Details</a></li>
+                                     <li class="active"><a href="{% url 'payment_details' %}" style="background-color:#ff7200;color:white;">Payment</a>
+                                    <li class="active"><a href="{% url 'projectadmin_login' %}" style="background-color:#ff7200;color:white;">Logout</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="clearfix"> </div>
+                                </ul>
+                        </div>
+                            <div class="clearfix"> </div>
+                            <!-- script-for-nav -->
+                        <script>
+                            $( "span.menu" ).click(function() {
+                              $( ".head-nav ul" ).slideToggle(300, function() {
+                                // Animation complete.
+                              });
+                            });
+                        </script>
+                    <!-- script-for-nav -->
+                    </div>
+                </div>
+        <div class="banner-1">
+            <div class="container">
+            </div>
+        </div>
+    <div class="main-1">
+            <h3 style="font-weight:bold;margin-top:30px;color:#ff7200;font-size:30px;text-align:center;">Employee DETAILS</h3>
+        <table id="customers">
+        <thead>
+        <tr class="warning">
+
+
+            <th>Employee Name</th>
+            <th>Email</th>
+            <th>Designation</th>
+            <th>Gender</th>
+
+
+
+
+
+        </tr>
+        </thead>
+        {% for o in employee_details%}
+
+       <tbody>
+        <tr>
+            <td>{{o.uname}}</td>
+            <td>{{o.email}}</td>
+            <td>{{o.designation}}</td>
+            <td>{{o.gender}}</td>
+                 </tr>
+       </tbody>
+        {% endfor %}
+    </table>
+	</div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Endorsement Guideline Protocol Actuality Problem</p>
+            </div>
+        </div>
+    <!-- footer-bottom -->
+    </body>
+    </html>
