@@ -1,0 +1,7 @@
+# Endorsement_Guideline_Protocol_Actuality_Problem
+This Project aims to provide maximum data security within an organisation.
+Secure computing is a forward looking, highly sophisticated and secure distributed record keeping system which will help in the storage and analysis of large amount of documents database which can be traced down to all workers. The system would include all the entry and exit records documents involved in, providing transparency. The model is based on consensus and hence all the documents will have to be validated and approved of, by all the members of the group before it goes to contractor. 
+
+The main purpose scope of the project is ONGC. It is  one of the leading corporation of India. So the process is maintained highly secured. Only the authorized login can access the documents and project  .The concept of secure computing has taken the fancy of a lot of people and the technology became famous because of one of its most popular use cases. 
+
+In this project, our main aim is to secure data that has to be transferred between employees and managers. Encryption techniques are used for the security of data stored and accessibility is limited to only those who are assigned. For others to access the documents, access has to be granted by the managers. The system ensures security, minimize data loss, protects from data theft and also from the system being hacked. It also gives privacy to users.
